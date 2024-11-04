@@ -12,6 +12,9 @@ const getStoredReadList = ()  =>{
 	}
 }
 
+// const getStoredWishList = () =>{
+// }
+
 const addToStoredReadList = (id) =>{
 	const storedList = getStoredReadList();
 	if(storedList.includes(id)){
@@ -25,4 +28,4 @@ const addToStoredReadList = (id) =>{
 }
 
 
-export { addToStoredReadList }
+export { addToStoredReadList, getStoredReadList }
