@@ -1,4 +1,5 @@
 import { json } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const getStoredReadList = ()  =>{
 	//read-list
@@ -23,7 +24,10 @@ const addToStoredReadList = (id) =>{
 	}else{
 		storedList.push(id);
 		const storedListStr = JSON.stringify(storedList);
-		localStorage.setItem('read-list', storedListStr)
+		localStorage.setItem('read-list', storedListStr);
+
+		//ideally trigger toast from the component
+		toast('this book is all ready added list.')
 	}
 }
 
