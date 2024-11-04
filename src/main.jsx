@@ -11,6 +11,7 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 
 import Dashboard from './components/Dashboard/Dashboard';
 import Home from './components/Home/Home';
+import BookDetail from './components/BookDetail/BookDetail';
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
+      },
+      {
+        path: 'books/:bookId',
+        element: <BookDetail></BookDetail>
       },
       {
         path: 'dashboard',
