@@ -5,6 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { getStoredReadList } from '../utility/addToDb';
 import Book from '../Book/Book';
+import { Helmet } from 'react-helmet-async';
 
 
 const ListedBooks = () => {
@@ -45,6 +46,9 @@ const ListedBooks = () => {
 
 	return (
 		<div>
+			<Helmet>
+				<title>Listed Books | Boi Poka</title>
+			</Helmet>
 			<h3 className="text-3xl my-8">Listed Books</h3>
 
 			<div className="dropdown">
